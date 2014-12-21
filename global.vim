@@ -1,4 +1,4 @@
-" prevent vim from adding that stupid empty line at the end of every file
+:" prevent vim from adding that stupid empty line at the end of every file
 set noeol
 set binary
 
@@ -32,4 +32,40 @@ call system('mkdir -vp ~/.backup/undo/ > /dev/null 2>&1')
 set background=dark
 let base16colorspace=256  " Access colors present in 256 colorspace
 colorscheme monokai
+syntax on
 
+
+" omni completion settings
+set ofu=syntaxcomplete#Complete
+let g:rubycomplete_buffer_loading = 0
+let g:rubycomplete_classes_in_global = 1
+
+" directory settings
+call system('mkdir -vp ~/.backup/undo/ > /dev/null 2>&1')
+set backupdir=~/.backup,.       " list of directories for the backup file
+set directory=~/.backup,~/tmp,. " list of directory names for the swap file
+"set nobackup            " do not write backup files
+set backupskip+=~/tmp/*,/private/tmp/* " skip backups on OSX temp dir, for crontab -e to properly work
+"set noswapfile          " do not write .swp files
+set undofile
+set undodir=~/.backup/undo/,~/tmp,.
+
+" folding
+set foldcolumn=0        " columns for folding
+set foldmethod=indent
+set foldlevel=9
+set nofoldenable        "dont fold by default "
+
+let mapleader = "\<BS>"
+map <Space> <BS>
+
+let maplocalleader = "\\"
+
+"close current buffer (without closing vim)
+nnoremap <leader>q :bp<cr>:bd #<cr>
+
+",v toggles last buffer
+nnoremap <leader>v <C-^>
+
+"Shift+tab unindents in insert mode
+inoremap <S-Tab> <C-d>
