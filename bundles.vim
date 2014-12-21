@@ -48,6 +48,8 @@ NeoBundle 'tpope/vim-endwise'
 NeoBundle 'Raimondi/delimitMate'
 " git diff in the gutter (sign column) and stages/reverts hunks
 NeoBundle 'airblade/vim-gitgutter'
+" git integration
+NeoBundle 'tpope/vim-fugitive'
 
 "TO EXPLORE LATER
 "  " TextMate-style snippets
@@ -56,8 +58,6 @@ NeoBundle 'airblade/vim-gitgutter'
 "  NeoBundle 'taglist.vim'
 "  " yank history
 "  NeoBundle 'YankRing.vim'
-"  " git integration
-"  NeoBundle 'tpope/vim-fugitive'
 "  " vertical alignment tool
 "  NeoBundle 'tsaleh/vim-align'
 "  " 'ag' searching integration

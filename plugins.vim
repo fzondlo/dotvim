@@ -33,6 +33,7 @@ let g:indent_guides_guide_size = 1
 let g:indent_guides_color_change_percent = 5
 
 " vim-airline
+set laststatus=2
 set guifont=Source\ Code\ Pro\ for\ Powerline "make sure to escape the spaces in the name properly
 let g:airline_powerline_fonts=1
 "let g:airline_theme='light' " dark simple badwolf solarized solarized2
@@ -58,3 +59,4 @@ nmap <leader>M :CtrlPBufTagAll<cr>
 
 " Not 100% sure what this does, but I don't have to press ESC twice to exit a prompt
 set timeoutlen=1000 ttimeoutlen=0
+let g:airline#extensions#hunks#enabled = 1
