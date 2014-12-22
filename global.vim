@@ -1,4 +1,4 @@
-:" prevent vim from adding that stupid empty line at the end of every file
+" prevent vim from adding that stupid empty line at the end of every file
 set noeol
 set binary
 
@@ -30,7 +30,7 @@ set showmode
 call system('mkdir -vp ~/.backup/undo/ > /dev/null 2>&1')
 
 set background=dark
-let base16colorspace=256  " Access colors present in 256 colorspace
+"let base16colorspace=256  " Access colors present in 256 colorspace
 colorscheme monokai
 syntax on
 
@@ -61,11 +61,6 @@ map <Space> <BS>
 
 let maplocalleader = "\\"
 
-"close current buffer (without closing vim)
-nnoremap <leader>q :bp<cr>:bd #<cr>
-
-",v toggles last buffer
-nnoremap <leader>v <C-^>
-
-"Shift+tab unindents in insert mode
-inoremap <S-Tab> <C-d>
+"disable bell completely
+set visualbell 
+set t_vb=
