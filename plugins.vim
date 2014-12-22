@@ -10,9 +10,18 @@ let g:syntastic_warning_symbol='⚠'
 let g:delimitMate_expand_space = 1 " Turns on/off the expansion of <Space>
 let g:delimitMate_expand_cr = 1    " Turns on/off the expansion of <CR>
 
+" Command-t
+let g:ctrlp_map = ''  " This allows nerdtree to bind to <C-p>
+let g:ctrlp_cmd = 'CtrlP'
+nmap <leader>r :CtrlPClearCache<cr>:CtrlP<cr>
+nmap <leader>l :CtrlPLine<cr>
+nmap <leader>b :CtrlPBuff<cr>
+nmap <leader>m :CtrlPBufTag<cr>
+nmap <leader>M :CtrlPBufTagAll<cr>
+
 " nerdtree
 " Ctrl-P to Display the file browser tree
-nmap <C-P> :NERDTreeTabsToggle<CR>
+nmap <C-p> :NERDTreeTabsToggle<CR>
 " ,p to show current file in the tree
 nmap <leader>p :NERDTreeFind<CR>
 let g:nerdtree_tabs_open_on_gui_startup = 0 "turn nerdtree off by default
@@ -48,14 +57,6 @@ map <Leader>t <Plug>(easymotion-t)
 map <Leader>T <Plug>(easymotion-T)
 map <Leader>F <Plug>(easymotion-F)
 let g:EasyMotion_startofline = 0 " keep cursor colum when JK motion
-
-" Command-t
-let g:ctrlp_cmd = 'CtrlP'
-nmap <leader>r :CtrlPClearCache<cr>:CtrlP<cr>
-nmap <leader>l :CtrlPLine<cr>
-nmap <leader>b :CtrlPBuff<cr>
-nmap <leader>m :CtrlPBufTag<cr>
-nmap <leader>M :CtrlPBufTagAll<cr>
 
 " Not 100% sure what this does, but I don't have to press ESC twice to exit a prompt
 set timeoutlen=1000 ttimeoutlen=0
