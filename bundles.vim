@@ -21,7 +21,8 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 " Refer to |:NeoBundle-examples|.
 " Note: You don't set neobundle setting in .gvimrc!
 
-
+" Vim + Tmux integrated split screen navigation
+NeoBundle 'christoomey/vim-tmux-navigator'
 " Get around easily
 NeoBundle "Lokaltog/vim-easymotion"
 " file tree

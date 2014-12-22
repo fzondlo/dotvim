@@ -64,3 +64,4 @@ let maplocalleader = "\\"
 "disable bell completely
 set visualbell 
 set t_vb=
+
