@@ -65,3 +65,4 @@ let maplocalleader = "\\"
 set visualbell 
 set t_vb=
 
+set backspace=2 " make backspace work like most other apps"
