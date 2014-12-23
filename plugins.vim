@@ -18,6 +18,7 @@ nmap <leader>l :CtrlPLine<cr>
 nmap <leader>b :CtrlPBuff<cr>
 nmap <leader>m :CtrlPBufTag<cr>
 nmap <leader>M :CtrlPBufTagAll<cr>
+let g:ctrlp_match_window = 'min:4,max:50'
 
 " nerdtree
 " Ctrl-P to Display the file browser tree
