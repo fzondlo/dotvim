@@ -29,12 +29,6 @@ set showmode
 " directory settings
 call system('mkdir -vp ~/.backup/undo/ > /dev/null 2>&1')
 
-set background=dark
-"let base16colorspace=256  " Access colors present in 256 colorspace
-colorscheme monokai
-syntax on
-
-
 " omni completion settings
 set ofu=syntaxcomplete#Complete
 let g:rubycomplete_buffer_loading = 0
