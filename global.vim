@@ -60,3 +60,7 @@ set visualbell
 set t_vb=
 
 set backspace=2 " make backspace work like most other apps"
+
+"as you go through search reuslts, the results appear in the middle of the screen
+nnoremap n nzz
+nnoremap N Nzz
