@@ -22,7 +22,7 @@ let g:ctrlp_match_window = 'min:4,max:50'
 
 " nerdtree
 " Ctrl-P to Display the file browser tree
-nmap <C-p> :NERDTreeTabsToggle<CR>
+nmap <C-p> :NERDTreeToggle<CR>
 " ,p to show current file in the tree
 nmap <leader>p :NERDTreeFind<CR>
 let g:nerdtree_tabs_open_on_gui_startup = 0 "turn nerdtree off by default

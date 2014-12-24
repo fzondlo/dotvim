@@ -70,7 +70,7 @@ nnoremap N Nzz
 "
 " Mazimize current screen and then restore other screens with Ctrl+W Z
 "
-nnoremap <C-W>z :call MaximizeToggle()<CR>
+nnoremap <C-W>z :NERDTreeClose\|:call MaximizeToggle()<CR>
 
 function! MaximizeToggle()
   if exists("s:maximize_session")
