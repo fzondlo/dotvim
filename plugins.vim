@@ -22,6 +22,7 @@ let g:ctrlp_match_window = 'min:4,max:50'
 
 " nerdtree
 " Ctrl-P to Display the file browser tree
+let g:NERDTreeWinPos = "right" "always open on the right side
 nmap <C-p> :NERDTreeToggle<CR>
 " ,p to show current file in the tree
 nmap <leader>p :NERDTreeFind<CR>
