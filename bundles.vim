@@ -28,7 +28,7 @@ NeoBundle "Lokaltog/vim-easymotion"
 " file tree
 NeoBundle 'scrooloose/nerdtree'
 " file tree and tabs interaction
-NeoBundle 'jistr/vim-nerdtree-tabs'
+"NeoBundle 'jistr/vim-nerdtree-tabs'
 " commenting
 NeoBundle 'scrooloose/nerdcommenter'
 " fuzzy file open
