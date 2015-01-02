@@ -22,10 +22,6 @@ set sw=2                " number of spaces for indent
 set sts=2
 set expandtab           " expand tabs into spaces
 
-nnoremap <F2> :set invpaste paste?<CR>
-set pastetoggle=<F2>
-set showmode
-
 " directory settings
 call system('mkdir -vp ~/.backup/undo/ > /dev/null 2>&1')
 

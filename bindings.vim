@@ -27,7 +27,16 @@ nnoremap <C-w>\ <C-w>=
 nnoremap n nzz
 nnoremap N Nzz
 
+"F1 toggles paste mode
+nnoremap <F3> :set invpaste paste?<CR>
+set pastetoggle=<F3>
+set showmode
 
+"F1 copies to global clipboard
+map <F1> "*y
+"F2 pastes from global clipboard
+map <F2> "*p
+imap <F2> <esc><F2>i
 
 "#####################
 "
