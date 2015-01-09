@@ -106,8 +106,10 @@ function! JavaDocComment()
   let my_snippet.="# @return ${".c.":void} \n"
   let my_snippet.="#"
 
-  "call an anonymous snippet
+  "move the cursor up one and go into insert mode
   execute "normal O"
+
+  "call an anonymous snippet
   execute 'call UltiSnips#Anon(my_snippet)'
 
   """""""""""""
