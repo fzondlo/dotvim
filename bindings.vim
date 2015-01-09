@@ -106,11 +106,15 @@ function! JavaDocComment()
   let my_snippet.="# @return ${".c.":void} \n"
   let my_snippet.="#"
 
-  "move the cursor up one and go into insert mode
-  execute "normal O"
+  "bind it to $&x (a combination that is likely to be never used)
+  "so that we can execute in insert mode and preserve indention
+  inoremap <silent> $&x $&x<C-R>=UltiSnips#Anon(my_snippet, '$&x')<cr>
+
+  "move the cursor up one and go into insert mode and execute binding
+  execute "normal O$&x"
 
   "call an anonymous snippet
-  execute 'call UltiSnips#Anon(my_snippet)'
+  "execute 'call 
 
   """""""""""""
   "old code for snipmate
