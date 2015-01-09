@@ -84,7 +84,7 @@ function! JavaDocComment()
   "split arguments into a list
   let argument_list=split(arguments, ",")
 
-  let my_snippet= "#####\n"
+  let my_snippet= "##########\n"
   let my_snippet.="# \n"
   let my_snippet.="# ${1:Method Description}\n"
   let my_snippet.="# \n"
@@ -99,8 +99,7 @@ function! JavaDocComment()
   endif
 
   let my_snippet.="# @return ${".c.":Type} \n"
-  let my_snippet.="# \n"
-  let my_snippet.= "#####"
+  let my_snippet.="#"
 
   "Making a dynamic snippet
   execute 'call MakeSnip(&ft, "dynamicsnippet", my_snippet)'
