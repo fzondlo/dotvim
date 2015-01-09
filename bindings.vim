@@ -109,7 +109,7 @@ function! JavaDocComment()
   execute "normal " . do
 
   "reset snippets, removing dynamic snippet
-  execute "call ResetAllSnippets()"
+  execute "call ReloadAllSnippets()"
   
   "echo argument_list
 endfunction
