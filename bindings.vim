@@ -64,3 +64,55 @@ function! MaximizeToggle()
 endfunction
 "
 "#####################
+
+
+"#####################
+" 
+" Creates JavaDoc Comments using snipmate
+"
+map # :call JavaDocComment()<CR>
+
+function! JavaDocComment()
+  "get the current line
+  let current_line=getline('.')
+  "match the arguments
+  let arguments=matchstr( current_line, '[(][^)]\+' )
+  "remove the ( at the begining we matched in the regex
+  let arguments=substitute(arguments, "(", "", "")
+  "remove any spaces, we use g in the flags to match all
+  let arguments=substitute(arguments, " ", "", "g")
+  "split arguments into a list
+  let argument_list=split(arguments, ",")
+
+  let my_snippet= "#####\n"
+  let my_snippet.="# \n"
+  let my_snippet.="# ${1:Method Description}\n"
+  let my_snippet.="# \n"
+
+  let c = 2
+  for i in argument_list
+    let my_snippet.="# @param ${".c.":Type} $".i."\n"
+    let c += 1 
+  endfor
+  if len(argument_list) > 0
+    let my_snippet.="# \n"
+  endif
+
+  let my_snippet.="# @return ${".c.":Type} \n"
+  let my_snippet.="# \n"
+  let my_snippet.= "#####"
+
+  "Making a dynamic snippet
+  execute 'call MakeSnip(&ft, "dynamicsnippet", my_snippet)'
+
+  "execute dynamic snippet
+  let do="Odynamicsnippet\<Tab>"
+  execute "normal " . do
+
+  "reset snippets, removing dynamic snippet
+  execute "call ResetAllSnippets()"
+  
+  "echo argument_list
+endfunction
+"
+"#####################

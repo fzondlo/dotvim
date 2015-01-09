@@ -51,10 +51,10 @@ NeoBundle 'Raimondi/delimitMate'
 NeoBundle 'airblade/vim-gitgutter'
 " git integration
 NeoBundle 'tpope/vim-fugitive'
+" TextMate-style snippets
+NeoBundle 'msanders/snipmate.vim'
 
 "TO EXPLORE LATER
-"  " TextMate-style snippets
-"  NeoBundle 'msanders/snipmate.vim'
 "  " tags list navigation
 "  NeoBundle 'taglist.vim'
 "  " yank history
