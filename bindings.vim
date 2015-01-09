@@ -38,6 +38,9 @@ map <F1> "*y
 map <F2> "*p
 imap <F2> <esc><F2>i
 
+"F12 reloads vim config
+nnoremap <F12> :source $MYVIMRC<cr>
+
 "#####################
 "
 " Mazimize current screen and then restore other screens with Ctrl+W Z
