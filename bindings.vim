@@ -103,7 +103,7 @@ function! JavaDocComment()
     let my_snippet.="# \n"
   endif
 
-  let my_snippet.="# @return ${".c.":Type} \n"
+  let my_snippet.="# @return ${".c.":void} \n"
   let my_snippet.="#"
 
   "call an anonymous snippet
