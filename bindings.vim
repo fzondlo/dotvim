@@ -66,10 +66,15 @@ endfunction
 "#####################
 
 
+
 "#####################
 " 
 " Creates JavaDoc Comments using snipmate
 "
+
+" this was for testing purposes
+"map 5 :source $MYVIMRC<cr>\|:call JavaDocComment()<CR>
+
 map # :call JavaDocComment()<CR>
 
 function! JavaDocComment()
@@ -101,17 +106,24 @@ function! JavaDocComment()
   let my_snippet.="# @return ${".c.":Type} \n"
   let my_snippet.="#"
 
-  "Making a dynamic snippet
-  execute 'call MakeSnip(&ft, "dynamicsnippet", my_snippet)'
+  "call an anonymous snippet
+  execute "normal O"
+  execute 'call UltiSnips#Anon(my_snippet)'
+
+  """""""""""""
+  "old code for snipmate
+  "
+  "execute 'call write_snippets("dynamicsnippet", my_snippet)'
 
   "execute dynamic snippet
-  let do="Odynamicsnippet\<Tab>"
-  execute "normal " . do
+  "let do="Odynamicsnippet\<Tab>"
+  "execute "normal " . do
 
   "reset snippets, removing dynamic snippet
-  execute "call ReloadAllSnippets()"
+  "execute call ReloadAllSnippets()
+  "
+  """""""""""""
   
   "echo argument_list
 endfunction
-"
-"#####################
+

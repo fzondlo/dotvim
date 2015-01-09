@@ -52,7 +52,20 @@ NeoBundle 'airblade/vim-gitgutter'
 " git integration
 NeoBundle 'tpope/vim-fugitive'
 " TextMate-style snippets
-NeoBundle 'msanders/snipmate.vim'
+"NeoBundle 'msanders/snipmate.vim'
+
+NeoBundle 'ervandew/supertab'
+" Track the engine.
+NeoBundle 'SirVer/ultisnips'
+
+" Snippets are separated from the engine. Add this if you want them:
+NeoBundle 'honza/vim-snippets'
+
+" Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
+" better key bindings for UltiSnipsExpandTrigger
+ let g:UltiSnipsExpandTrigger = "<tab>"
+ let g:UltiSnipsJumpForwardTrigger = "<tab>"
+ let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
 
 "TO EXPLORE LATER
 "  " tags list navigation
