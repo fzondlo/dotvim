@@ -1,9 +1,3 @@
-"close current buffer (without closing vim)
-nnoremap <leader>q :bp<cr>:bd #<cr>
-
-",v toggles last buffer
-nnoremap <leader>v <C-^>
-
 "Shift+tab unindents in insert mode
 inoremap <S-Tab> <C-d>
 
@@ -31,6 +25,10 @@ nnoremap N Nzz
 nnoremap <F3> :set invpaste paste?<CR>
 set pastetoggle=<F3>
 set showmode
+
+"> and < to indent / unindent instead of >> and <<
+noremap > >>
+noremap < <<
 
 "F1 copies to global clipboard
 map <F1> "*y
