@@ -5,6 +5,10 @@ let g:syntastic_check_on_wq=0
 let g:syntastic_error_symbol='✗'
 let g:syntastic_warning_symbol='⚠'
 
+"Supertab and Ultisnips - better key bindings for UltiSnipsExpandTrigger
+ let g:UltiSnipsExpandTrigger = "<tab>"
+ let g:UltiSnipsJumpForwardTrigger = "<tab>"
+ let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
 
 " delimitMate
 let g:delimitMate_expand_space = 1 " Turns on/off the expansion of <Space>
@@ -27,6 +31,10 @@ nmap <C-p> :NERDTreeToggle<CR>
 " ,p to show current file in the tree
 nmap <leader>p :NERDTreeFind<CR>
 let g:nerdtree_tabs_open_on_gui_startup = 0 "turn nerdtree off by default
+"Open file in split with S
+let NERDTreeMapOpenSplit='s'
+"Open file in vertical split with f
+let NERDTreeMapOpenVSplit='f'
 
 " nerdcommenter
 " ,/ to invert comment on the current line/selection
