@@ -45,6 +45,9 @@ map t za
 "switch to last used buffer
 noremap <Leader>b :bp<CR>
 
+"better go to definition
+map gd g*
+
 "#####################
 "
 " Mazimize current screen and then restore other screens with Ctrl+W Z

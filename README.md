@@ -11,6 +11,7 @@ Bindings
 * <spacebar> - leader
 * <leader>b - toggle last used buffer
 * t - folds functions
+* gd - enhanced go to function under cursor
 
 CtrlP
 * <leader>r - CtrlP file finder
