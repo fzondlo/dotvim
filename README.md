@@ -9,11 +9,12 @@ From your homedirectory (on Linux/Mac OSX):
 
 Bindings
 * <spacebar> - leader
-* <leader>b - toggle last used buffer
+* <leader>v - previous buffer
+* <leader>b - next buffer
 * <ctrl-t> - folds functions
 * gd - enhanced go to function under cursor
 
-CtrlP
+Ctrl
 * <leader>r - CtrlP file finder
 * <leader>R - CtrlP buffer finder
 * <F5> - clear CtrlP cache 

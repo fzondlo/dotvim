@@ -43,7 +43,11 @@ nnoremap <F12> :source $MYVIMRC<cr>
 map <C-X> za
 
 "switch to last used buffer
-noremap <Leader>b :bp<CR>
+noremap <Leader>v :bp<CR>
+
+"switch to the next buffer
+noremap <Leader>b :bn<CR>
+
 
 "better go to definition
 map gd g*
