@@ -40,7 +40,7 @@ imap <F2> <esc><F2>i
 nnoremap <F12> :source $MYVIMRC<cr>
 
 "toggles folding functions
-map t za
+map 5 za
 
 "switch to last used buffer
 noremap <Leader>b :bp<CR>

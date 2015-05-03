@@ -10,7 +10,7 @@ From your homedirectory (on Linux/Mac OSX):
 Bindings
 * <spacebar> - leader
 * <leader>b - toggle last used buffer
-* t - folds functions
+* 5 - folds functions
 * gd - enhanced go to function under cursor
 
 CtrlP
