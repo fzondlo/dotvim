@@ -39,6 +39,9 @@ imap <F2> <esc><F2>i
 "F12 reloads vim config
 nnoremap <F12> :source $MYVIMRC<cr>
 
+"toggles folding functions
+map t za
+
 "#####################
 "
 " Mazimize current screen and then restore other screens with Ctrl+W Z

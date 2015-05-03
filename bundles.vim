@@ -125,6 +125,7 @@ NeoBundle 'Puppet-Syntax-Highlighting'
 NeoBundle 'JSON.vim'
 "NeoBundle 'tpope/vim-cucumber'
 NeoBundle 'tpope/vim-haml'
+"NeoBundle 'haml'
 "NeoBundle 'tpope/vim-markdown'
 NeoBundle 'kchmck/vim-coffee-script'
 NeoBundle 'vitaly/vim-syntastic-coffee'
@@ -164,6 +165,7 @@ NeoBundle 'vitaly/vim-syntastic-coffee'
 "  NeoBundle 'Shougo/unite-outline'
 "  "NeoBundle 'ujihisa/unite-colorscheme'
 
+NeoBundle 'bruno-/vim-ruby-fold'
 
 call neobundle#end()
 
