@@ -8,4 +8,6 @@ From your homedirectory (on Linux/Mac OSX):
 * curl https://raw.githubusercontent.com/Shougo/neobundle.vim/master/bin/install.sh | sh
 
 Bindings
+* <spacebar> - leader
+* <leader>b - toggle last used buffer
 * t - folds functions
