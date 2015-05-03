@@ -11,3 +11,8 @@ Bindings
 * <spacebar> - leader
 * <leader>b - toggle last used buffer
 * t - folds functions
+
+CtrlP
+* <leader>r - CtrlP file finder
+* <leader>R - CtrlP buffer finder
+* <F5> - clear CtrlP cache 

@@ -17,11 +17,12 @@ let g:delimitMate_expand_space = 1 " Turns on/off the expansion of <Space>
 " Command-t
 let g:ctrlp_map = ''  " This allows nerdtree to bind to <C-p>
 let g:ctrlp_cmd = 'CtrlP'
-nmap <leader>r :CtrlPClearCache<cr>:CtrlP<cr>
-nmap <leader>l :CtrlPLine<cr>
-nmap <leader>b :CtrlPBuff<cr>
-nmap <leader>m :CtrlPBufTag<cr>
-nmap <leader>M :CtrlPBufTagAll<cr>
+nmap <leader>r :CtrlP<cr>
+nmap <F4> :CtrlPClearCache<cr>
+nmap <leader>R :CtrlPBuff<cr>
+"nmap <leader>l :CtrlPLine<cr>
+"nmap <leader>m :CtrlPBufTag<cr>
+"nmap <leader>M :CtrlPBufTagAll<cr>
 let g:ctrlp_match_window = 'min:4,max:50'
 
 " nerdtree
