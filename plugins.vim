@@ -18,7 +18,7 @@ let g:delimitMate_expand_space = 1 " Turns on/off the expansion of <Space>
 let g:ctrlp_map = ''  " This allows nerdtree to bind to <C-p>
 let g:ctrlp_cmd = 'CtrlP'
 nmap <leader>r :CtrlP<cr>
-nmap <F4> :CtrlPClearCache<cr>
+nmap <F5> :CtrlPClearCache<cr>:CtrlP<cr>
 nmap <leader>R :CtrlPBuff<cr>
 "nmap <leader>l :CtrlPLine<cr>
 "nmap <leader>m :CtrlPBufTag<cr>
@@ -36,6 +36,8 @@ let g:nerdtree_tabs_open_on_gui_startup = 0 "turn nerdtree off by default
 let NERDTreeMapOpenSplit='s'
 "Open file in vertical split with f
 let NERDTreeMapOpenVSplit='f'
+"nerdtree shows dotfiles
+let NERDTreeShowHidden=1
 
 " nerdcommenter
 " ,/ to invert comment on the current line/selection
