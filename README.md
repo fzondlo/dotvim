@@ -8,13 +8,13 @@ From your homedirectory (on Linux/Mac OSX):
 * curl https://raw.githubusercontent.com/Shougo/neobundle.vim/master/bin/install.sh | sh
 
 Bindings
-* <spacebar> - leader
-* <leader>v - previous buffer
-* <leader>b - next buffer
-* <ctrl-t> - folds functions
-* gd - enhanced go to function under cursor
+* `<spacebar>` - leader
+* `<leader>v` - previous buffer
+* `<leader>b` - next buffer
+* `<ctrl-t>` - folds functions
+* `gd` - enhanced go to function under cursor
 
 Ctrl
-* <leader>r - CtrlP file finder
-* <leader>R - CtrlP buffer finder
-* <F5> - clear CtrlP cache 
+* `<leader>r` - CtrlP file finder
+* `<leader>R` - CtrlP buffer finder
+* `<F5>` - clear CtrlP cache 
