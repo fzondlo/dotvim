@@ -13,6 +13,7 @@ Bindings
 * `<ctrl-t>` - folds functions
 * `gd` - enhanced go to function under cursor
 * `<option-s>` - Save a file (`<ctrl-Y>`)
+* use Alt+arrow keys to resize windows
 
 ctrlP
 * `<leader>r` - CtrlP file finder
