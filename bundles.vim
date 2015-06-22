@@ -98,10 +98,9 @@ NeoBundle 'honza/vim-snippets'
 " rails support
 NeoBundle 'tpope/vim-rails'
 " bundler integration (e.g. :Bopen)
+NeoBundle 'tpope/vim-bundler'
 
 "LATER
-" " bundler integration (e.g. :Bopen)
-" NeoBundle 'tpope/vim-bundler'
 " " rake integration
 " NeoBundle 'tpope/vim-rake'
 " " A custom text object for selecting ruby blocks (ar/ir)
