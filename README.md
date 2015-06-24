@@ -14,6 +14,8 @@ From your homedirectory (on Linux/Mac OSX):
 * `gd` - enhanced go to function under cursor
 * `<option-s>` - Save a file (`<ctrl-Y>`)
 * use Alt+arrow keys to resize windows
+* `:W` - saves files using sudo permissions
+* `<cmd-q>` - close file quickly (bound through hex 0x1f in iterm)
 
 # ctrlP
 * `<leader>r` - CtrlP file finder

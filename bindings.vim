@@ -27,6 +27,13 @@ nnoremap <M-k> 2<C-w>+
 nnoremap <M-h> 5<C-w><
 nnoremap <M-l> 5<C-w>>
 
+" :W now saves files using sudo permissions
+command W :execute ':silent w !sudo tee % > /dev/null' | :edit!
+
+" Close window
+noremap <Char-0x1f> :q<cr>
+
+
 "as you go through search reuslts, the results appear in the middle of the screen
 nnoremap n nzz
 nnoremap N Nzz
