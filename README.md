@@ -6,7 +6,7 @@ From your homedirectory (on Linux/Mac OSX):
 * `ln -sfn dotvim/vimrc .vimrc`
 * curl https://raw.githubusercontent.com/Shougo/neobundle.vim/master/bin/install.sh | sh
 
-Bindings
+# Bindings
 * `<spacebar>` - leader
 * `<leader>v` - previous buffer
 * `<leader>b` - next buffer
@@ -15,7 +15,11 @@ Bindings
 * `<option-s>` - Save a file (`<ctrl-Y>`)
 * use Alt+arrow keys to resize windows
 
-ctrlP
+# ctrlP
 * `<leader>r` - CtrlP file finder
 * `<leader>R` - CtrlP buffer finder
 * `<F5>` - clear CtrlP cache 
+
+# nerdtree
+* `ctrl-p` - Open nerdtree
+* `ctrl-\` - focus to current file in nerd tree
