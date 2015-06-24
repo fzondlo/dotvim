@@ -24,4 +24,4 @@ From your homedirectory (on Linux/Mac OSX):
 
 # nerdtree
 * `ctrl-p` - Open nerdtree
-* `ctrl-\` - focus to current file in nerd tree
+* `<leader>p` - focus to current file in nerd tree
