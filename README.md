@@ -16,6 +16,7 @@ From your homedirectory (on Linux/Mac OSX):
 * use Alt+arrow keys to resize windows
 * `:W` - saves files using sudo permissions
 * `<cmd-q>` - close file quickly (bound through hex 0x1f in iterm)
+* `%` - jumps from beginning to end of method
 
 # ctrlP
 * `<leader>r` - CtrlP file finder
