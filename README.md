@@ -20,9 +20,15 @@ From your homedirectory (on Linux/Mac OSX):
 
 # ctrlP
 * `<leader>r` - CtrlP file finder
-* `<leader>R` - CtrlP buffer finder
-* `<F5>` - clear CtrlP cache 
+* `<leader>v` - CtrlP buffer finder
+* `<F5>` - clear CtrlP file cache and open file finder
 
 # nerdtree
 * `ctrl-p` - Open nerdtree
 * `<leader>p` - focus to current file in nerd tree
+
+# Windowswap
+* `<leader>s` Select origin split, then switch to destination split and hit `<leader>s` again to paste (or switch) the splits
+
+# JustyJuggler
+* `<leader>v` Lusty juggler buffer selection menu

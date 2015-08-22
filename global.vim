@@ -21,6 +21,7 @@ set ts=2                " number of spaces in a tab
 set sw=2                " number of spaces for indent
 set sts=2
 set expandtab           " expand tabs into spaces
+set hidden              " lusty juggler likes this settings
 
 " directory settings
 call system('mkdir -vp ~/.backup/undo/ > /dev/null 2>&1')

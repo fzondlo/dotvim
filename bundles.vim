@@ -63,6 +63,18 @@ NeoBundle 'SirVer/ultisnips'
 " Snippets are separated from the engine. Add this if you want them:
 NeoBundle 'honza/vim-snippets'
 
+" easy window swapping
+NeoBundle 'wesQ3/vim-windowswap'
+
+" LustyJuggler for a nice buffer line
+NeoBundle 'sjbach/lusty'
+
+" Shows buffers at bottom
+" ---------------
+" Problem with this library is that if you have more than 4 buffers it becomes
+" pretty much useless
+"NeoBundle 'vim-scripts/buftabs'
+
 "TO EXPLORE LATER
 "  " tags list navigation
 "  NeoBundle 'taglist.vim'

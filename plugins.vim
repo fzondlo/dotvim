@@ -19,7 +19,7 @@ let g:ctrlp_map = ''  " This allows nerdtree to bind to <C-p>
 let g:ctrlp_cmd = 'CtrlP'
 nmap <leader>r :CtrlP<cr>
 nmap <F5> :CtrlPClearCache<cr>:CtrlP<cr>
-nmap <leader>R :CtrlPBuff<cr>
+nmap <leader>b :CtrlPBuff<cr>
 "nmap <leader>l :CtrlPLine<cr>
 "nmap <leader>m :CtrlPBufTag<cr>
 "nmap <leader>M :CtrlPBufTagAll<cr>
@@ -60,7 +60,12 @@ set guifont=Source\ Code\ Pro\ for\ Powerline "make sure to escape the spaces in
 let g:airline_powerline_fonts=1
 "let g:airline_theme='light' " dark simple badwolf solarized solarized2
 set noshowmode
-let g:airline#extensions#tabline#enabled = 1 "displays all buffers when there's only one tab open
+" get rid of the buffer line up top
+let g:airline#extensions#tabline#enabled = 0
+let g:airline#extensions#hunks#enabled = 1
+
+" vim-windowswap
+nnoremap <leader>s :call WindowSwap#EasyWindowSwap()<CR>
 
 " vim-easymotion
 map <Leader>j <Plug>(easymotion-j)
@@ -71,6 +76,9 @@ map <Leader>T <Plug>(easymotion-T)
 map <Leader>F <Plug>(easymotion-F)
 let g:EasyMotion_startofline = 0 " keep cursor colum when JK motion
 
+"LustyJuggler
+map <leader>v :LustyJuggler<CR>
+
+
 " Not 100% sure what this does, but I don't have to press ESC twice to exit a prompt
 set timeoutlen=1000 ttimeoutlen=0
-let g:airline#extensions#hunks#enabled = 1
