@@ -5,6 +5,7 @@ From your homedirectory (on Linux/Mac OSX):
 * `ln -sfn dotvim .vim`
 * `ln -sfn dotvim/vimrc .vimrc`
 * curl https://raw.githubusercontent.com/Shougo/neobundle.vim/master/bin/install.sh | sh
+* install the `ag` command for better performance `brew install the_silver_searcher`
 
 # Bindings
 * `<spacebar>` - leader
@@ -19,9 +20,7 @@ From your homedirectory (on Linux/Mac OSX):
 * `%` - jumps from beginning to end of method
 
 # ctrlP
-* `<leader>r` - CtrlP file finder
-* `<leader>v` - CtrlP buffer finder
-* `<F5>` - clear CtrlP file cache and open file finder
+* `<leader>r` - Refresh files and show CtrlP file finder
 
 # nerdtree
 * `ctrl-p` - Open nerdtree

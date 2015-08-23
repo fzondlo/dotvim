@@ -14,16 +14,25 @@ let g:syntastic_warning_symbol='⚠'
 let g:delimitMate_expand_space = 1 " Turns on/off the expansion of <Space>
 "let g:delimitMate_expand_cr = 1    " Turns on/off the expansion of <CR>
 
-" Command-t
+" CtrlP
 let g:ctrlp_map = ''  " This allows nerdtree to bind to <C-p>
 let g:ctrlp_cmd = 'CtrlP'
-nmap <leader>r :CtrlP<cr>
-nmap <F5> :CtrlPClearCache<cr>:CtrlP<cr>
+nmap <leader>r :CtrlPClearCache<cr>:CtrlP<cr>
 nmap <leader>b :CtrlPBuff<cr>
 "nmap <leader>l :CtrlPLine<cr>
 "nmap <leader>m :CtrlPBufTag<cr>
 "nmap <leader>M :CtrlPBufTagAll<cr>
 let g:ctrlp_match_window = 'min:4,max:50'
+" this makes ctrl p A LOT faster
+let g:ctrlp_user_command = 'ag %s -i --nocolor --nogroup --hidden
+      \ --ignore .git
+      \ --ignore .svn
+      \ --ignore .hg
+      \ --ignore .DS_Store
+      \ --ignore "**/*.pyc"
+      \ -g ""'
+
+
 
 " nerdtree
 " Ctrl-P to Display the file browser tree
