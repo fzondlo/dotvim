@@ -72,6 +72,18 @@ set noshowmode
 " get rid of the buffer line up top
 let g:airline#extensions#tabline#enabled = 0
 let g:airline#extensions#hunks#enabled = 1
+let g:airline#extensions#default#layout = [
+  \ [ 'a', 'b', 'c' ],
+  \ [ 'x', 'y', 'z', 'warning' ]
+  \ ]
+
+let g:airline#extensions#default#section_truncate_width = {
+    \ 'a': 70,
+    \ 'b': 120,
+    \ 'x': 90,
+    \ 'y': 100,
+    \ 'z': 90,
+    \ }
 
 " vim-windowswap
 nnoremap <leader>s :call WindowSwap#EasyWindowSwap()<CR>
