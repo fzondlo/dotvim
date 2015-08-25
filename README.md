@@ -18,6 +18,7 @@ From your homedirectory (on Linux/Mac OSX):
 * `:W` - saves files using sudo permissions
 * `<cmd-q>` - close file quickly (bound through hex 0x1f in iterm)
 * `%` - jumps from beginning to end of method
+* `F8` - Retabbs and strips all trailing white space
 
 # ctrlP
 * `<leader>r` - Refresh files and show CtrlP file finder
