@@ -4,6 +4,8 @@ let g:syntastic_auto_loc_list=2
 let g:syntastic_check_on_wq=0
 let g:syntastic_error_symbol='✗'
 let g:syntastic_warning_symbol='⚠'
+" Disable syntastic from checking sass since it's sooo slow
+let g:syntastic_mode_map = { 'passive_filetypes': ['sass', 'scss']  }
 
 "Supertab and Ultisnips - better key bindings for UltiSnipsExpandTrigger
  let g:UltiSnipsExpandTrigger = "<tab>"
