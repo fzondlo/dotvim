@@ -200,7 +200,7 @@ function! Resize(dir)
   endif
 endfunction
 
-nnoremap <silent> <F8> :call <SID>StripTrailingWhitespaces()<CR>
+nnoremap <F8> :call <SID>StripTrailingWhitespaces()<CR>
 function! <SID>StripTrailingWhitespaces()
   retab
   " Preparation: save last search, and cursor position.
@@ -209,6 +209,8 @@ function! <SID>StripTrailingWhitespaces()
   let c = col(".")
   " Do the business:
   %s/\s\+$//e
+  " Remove ^M at the end of each line
+  %s/\r//g
   " Clean up: restore previous search history, and cursor position
   let @/=_s
   call cursor(l, c)
