@@ -19,6 +19,7 @@ From your homedirectory (on Linux/Mac OSX):
 * `<cmd-q>` - close file quickly (bound through hex 0x1f in iterm)
 * `%` - jumps from beginning to end of method
 * `F8` - Retabbs and strips all trailing white space
+* `F9` - Closes all unused buffers
 
 # ctrlP
 * `<leader>r` - Refresh files and show CtrlP file finder
