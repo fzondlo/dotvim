@@ -33,8 +33,12 @@ NeoBundle 'scrooloose/nerdtree'
 "NeoBundle 'jistr/vim-nerdtree-tabs'
 " commenting
 NeoBundle 'scrooloose/nerdcommenter'
+
 " fuzzy file open
 NeoBundle 'kien/ctrlp.vim'
+" very fast matching with ctrlp
+NeoBundle 'FelikZ/ctrlp-py-matcher'
+
 " popup completion menu
 NeoBundle 'AutoComplPop'
 " syntax checking on save

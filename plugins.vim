@@ -25,7 +25,7 @@ nmap <leader>b :CtrlPBuff<cr>
 "nmap <leader>m :CtrlPBufTag<cr>
 "nmap <leader>M :CtrlPBufTagAll<cr>
 let g:ctrlp_match_window = 'min:4,max:50'
-" this makes ctrl p A LOT faster
+" this makes ctrl p indexing A LOT faster
 let g:ctrlp_user_command = 'ag %s -i --nocolor --nogroup --hidden
       \ --ignore .git
       \ --ignore .svn
@@ -33,8 +33,8 @@ let g:ctrlp_user_command = 'ag %s -i --nocolor --nogroup --hidden
       \ --ignore .DS_Store
       \ --ignore "**/*.pyc"
       \ -g ""'
-
-
+" this makes ctrlp searching a lot faster
+let g:ctrlp_match_func = { 'match': 'pymatcher#PyMatch'  }
 
 " nerdtree
 " Ctrl-P to Display the file browser tree
