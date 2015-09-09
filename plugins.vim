@@ -8,9 +8,12 @@ let g:syntastic_warning_symbol='⚠'
 let g:syntastic_mode_map = { 'passive_filetypes': ['sass', 'scss']  }
 
 "Supertab and Ultisnips - better key bindings for UltiSnipsExpandTrigger
- let g:UltiSnipsExpandTrigger = "<tab>"
- let g:UltiSnipsJumpForwardTrigger = "<tab>"
- let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
+let g:UltiSnipsExpandTrigger = "<tab>"
+let g:UltiSnipsJumpForwardTrigger = "<tab>"
+let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
+
+"Disable sql completion
+let g:loaded_sql_completion = 0
 
 " delimitMate
 let g:delimitMate_expand_space = 1 " Turns on/off the expansion of <Space>
