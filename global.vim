@@ -21,6 +21,7 @@ set ts=2                " number of spaces in a tab
 set sw=2                " number of spaces for indent
 set sts=2
 set expandtab           " expand tabs into spaces
+set smarttab            " make tab insert indents instead of tabs at the beginning of a line
 set hidden              " lusty juggler likes this settings
 
 " directory settings
