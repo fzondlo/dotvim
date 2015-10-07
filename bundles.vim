@@ -73,6 +73,9 @@ NeoBundle 'wesQ3/vim-windowswap'
 " LustyJuggler for a nice buffer line
 NeoBundle 'sjbach/lusty'
 
+" analytics
+NeoBundle 'wakatime/vim-wakatime'
+
 " Shows buffers at bottom
 " ---------------
 " Problem with this library is that if you have more than 4 buffers it becomes
