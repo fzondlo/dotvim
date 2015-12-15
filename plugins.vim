@@ -71,6 +71,7 @@ let g:indent_guides_color_change_percent = 5
 " vim-airline
 set laststatus=2
 set guifont=Source\ Code\ Pro\ for\ Powerline "make sure to escape the spaces in the name properly
+let g:Powerline_symbols = 'unicode'
 let g:airline_powerline_fonts=1
 "let g:airline_theme='light' " dark simple badwolf solarized solarized2
 set noshowmode
