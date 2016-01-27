@@ -108,4 +108,4 @@ map <leader>v :LustyJuggler<CR>
 
 
 " I don't have to press ESC twice to exit a prompt
-set timeoutlen=0 ttimeoutlen=-1
+set timeoutlen=100 ttimeoutlen=-1
