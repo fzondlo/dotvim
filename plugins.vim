@@ -107,5 +107,5 @@ let g:EasyMotion_startofline = 0 " keep cursor colum when JK motion
 map <leader>v :LustyJuggler<CR>
 
 
-" Not 100% sure what this does, but I don't have to press ESC twice to exit a prompt
-set timeoutlen=1000 ttimeoutlen=0
+" I don't have to press ESC twice to exit a prompt
+set timeoutlen=0 ttimeoutlen=-1
