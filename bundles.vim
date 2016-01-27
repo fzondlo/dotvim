@@ -42,7 +42,7 @@ NeoBundle 'kien/ctrlp.vim'
 NeoBundle 'FelikZ/ctrlp-py-matcher'
 
 " popup completion menu
-NeoBundle 'AutoComplPop'
+"NeoBundle 'AutoComplPop'
 " syntax checking on save
 NeoBundle 'scrooloose/syntastic'
 " manipulation of surraunding parens, quotes, etc.
@@ -67,13 +67,13 @@ NeoBundle 'ervandew/supertab'
 NeoBundle 'SirVer/ultisnips'
 
 " Snippets are separated from the engine. Add this if you want them:
-NeoBundle 'honza/vim-snippets'
+"NeoBundle 'honza/vim-snippets'
 
 " easy window swapping
 NeoBundle 'wesQ3/vim-windowswap'
 
 " LustyJuggler for a nice buffer line
-NeoBundle 'sjbach/lusty'
+"NeoBundle 'sjbach/lusty'
 
 " analytics
 NeoBundle 'wakatime/vim-wakatime'
