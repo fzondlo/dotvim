@@ -49,6 +49,8 @@ NeoBundle 'scrooloose/syntastic'
 NeoBundle 'tpope/vim-surround'
 " better looking statusline
 NeoBundle 'bling/vim-airline'
+NeoBundle 'vim-airline/vim-airline-themes'
+
 " plugin for visually displaying indent levels
 NeoBundle 'Indent-Guides'
 " end certain structures automatically, e.g. begin/end etc.
@@ -77,6 +79,10 @@ NeoBundle 'wesQ3/vim-windowswap'
 
 " analytics
 NeoBundle 'wakatime/vim-wakatime'
+
+"autocomplete
+NeoBundle 'Valloric/YouCompleteMe'
+
 
 " Shows buffers at bottom
 " ---------------
