@@ -104,8 +104,6 @@ map <Leader>F <Plug>(easymotion-F)
 let g:EasyMotion_startofline = 0 " keep cursor colum when JK motion
 
 "LustyJuggler
-map <leader>v :LustyJuggler<CR>
+"map <leader>v :LustyJuggler<CR>
+nnoremap <silent> <C-q> :TmuxNavigateLeft<cr>
 
-
-" I don't have to press ESC twice to exit a prompt
-set timeoutlen=100 ttimeoutlen=-1

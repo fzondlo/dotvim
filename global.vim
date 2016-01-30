@@ -58,3 +58,5 @@ set visualbell
 set t_vb=
 
 set backspace=2 " make backspace work like most other apps"
+set lazyredraw " should speed up macro execution
+set timeoutlen=300 ttimeoutlen=0 " I don't have to press ESC twice to exit a prompt
