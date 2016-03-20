@@ -14,3 +14,6 @@ set encoding=utf-8
 " after.vim is loaded from ./after/plugin/after.vim
 " which should place it AFTER all the other plugins in the loading order
 " bindings.vim and local.vim are loaded from after.vim
+
+" Required:
+filetype plugin indent on

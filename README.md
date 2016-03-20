@@ -7,6 +7,12 @@ From your homedirectory (on Linux/Mac OSX):
 * curl https://raw.githubusercontent.com/Shougo/neobundle.vim/master/bin/install.sh | sh
 * install the `ag` command for better performance `brew install the_silver_searcher`
 
+Get neovim to recognize the config
+* `mkdir -p ${XDG_CONFIG_HOME:=$HOME/.config}`
+* `ln -s ~/.vim $XDG_CONFIG_HOME/nvim`
+* `ln -s ~/.vimrc $XDG_CONFIG_HOME/nvim/init.vim`
+* install https://github.com/Shougo/dein.vim
+
 # Bindings
 * `<spacebar>` - leader
 * `<leader>v` - previous buffer

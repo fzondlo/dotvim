@@ -1,87 +1,85 @@
-" Note: Skip initialization for vim-tiny or vim-small.
-if !1 | finish | endif
-
-if has('vim_starting')
-  if &compatible
-    set nocompatible               " Be iMproved
-  endif
-
-  " Required:
-  set runtimepath+=~/.vim/bundle/neobundle.vim/
+if &compatible
+  set nocompatible               " Be iMproved
 endif
 
 " Required:
-call neobundle#begin(expand('~/.vim/bundle/'))
+set runtimepath^=/Users/fzondlo/.vim/dein/repos/github.com/Shougo/dein.vim
 
-" Let NeoBundle manage NeoBundle
 " Required:
-NeoBundleFetch 'Shougo/neobundle.vim'
+call dein#begin(expand('/Users/fzondlo/.vim/dein'))
 
-" My Bundles here:
-" Refer to |:NeoBundle-examples|.
-" Note: You don't set neobundle setting in .gvimrc!
+" Let dein manage dein
+" Required:
+call dein#add('Shougo/dein.vim')
 
-NeoBundle 'powerline/fonts'
+" Add or remove your plugins here:
+call dein#add('Shougo/neosnippet.vim')
+call dein#add('Shougo/neosnippet-snippets')
 
-NeoBundle 'tmhedberg/matchit'
+" You can specify revision/branch/tag.
+call dein#add('Shougo/vimshell', { 'rev': '3787e5' })
+
+call dein#add('powerline/fonts')
+
+call dein#add('tmhedberg/matchit')
 
 " Vim + Tmux integrated split screen navigation
-NeoBundle 'christoomey/vim-tmux-navigator'
+call dein#add('christoomey/vim-tmux-navigator')
 " Get around easily
-NeoBundle "Lokaltog/vim-easymotion"
+call dein#add("Lokaltog/vim-easymotion")
 " file tree
-NeoBundle 'scrooloose/nerdtree'
+call dein#add('scrooloose/nerdtree')
 " file tree and tabs interaction
 "NeoBundle 'jistr/vim-nerdtree-tabs'
 " commenting
-NeoBundle 'scrooloose/nerdcommenter'
+call dein#add('scrooloose/nerdcommenter')
 
 " fuzzy file open
-NeoBundle 'kien/ctrlp.vim'
+call dein#add('kien/ctrlp.vim')
 " very fast matching with ctrlp
-NeoBundle 'FelikZ/ctrlp-py-matcher'
+call dein#add('FelikZ/ctrlp-py-matcher')
 
 " popup completion menu
 "NeoBundle 'AutoComplPop'
 " syntax checking on save
-NeoBundle 'scrooloose/syntastic'
+call dein#add('scrooloose/syntastic')
 " manipulation of surraunding parens, quotes, etc.
-NeoBundle 'tpope/vim-surround'
+call dein#add('tpope/vim-surround')
 " better looking statusline
-NeoBundle 'bling/vim-airline'
-NeoBundle 'vim-airline/vim-airline-themes'
+call dein#add('bling/vim-airline')
+call dein#add('vim-airline/vim-airline-themes')
 
 " plugin for visually displaying indent levels
-NeoBundle 'Indent-Guides'
-" end certain structures automatically, e.g. begin/end etc.
-NeoBundle 'tpope/vim-endwise'
+call dein#add('Indent-Guides')
+" end certain structures automatically, e.g. begin/end etc.)
+call dein#add('tpope/vim-endwise')
 " automatic closing of quotes, parenthesis, brackets, etc.
-NeoBundle 'Raimondi/delimitMate'
+call dein#add('Raimondi/delimitMate')
 " git diff in the gutter (sign column) and stages/reverts hunks
-NeoBundle 'airblade/vim-gitgutter'
+call dein#add('airblade/vim-gitgutter')
 " git integration
-NeoBundle 'tpope/vim-fugitive'
+call dein#add('tpope/vim-fugitive')
 " TextMate-style snippets
 "NeoBundle 'msanders/snipmate.vim'
 
-NeoBundle 'ervandew/supertab'
+call dein#add('ervandew/supertab')
 " Track the engine.
-NeoBundle 'SirVer/ultisnips'
+call dein#add('SirVer/ultisnips')
 
 " Snippets are separated from the engine. Add this if you want them:
 "NeoBundle 'honza/vim-snippets'
 
 " easy window swapping
-NeoBundle 'wesQ3/vim-windowswap'
+call dein#add('wesQ3/vim-windowswap')
 
 " LustyJuggler for a nice buffer line
 "NeoBundle 'sjbach/lusty'
 
 " analytics
-NeoBundle 'wakatime/vim-wakatime'
+call dein#add('wakatime/vim-wakatime')
 
 "autocomplete
-NeoBundle 'Valloric/YouCompleteMe'
+call dein#add('Valloric/YouCompleteMe')
 
 
 " Shows buffers at bottom
@@ -125,9 +123,9 @@ NeoBundle 'Valloric/YouCompleteMe'
 " Ruby/Rails
 
 " rails support
-NeoBundle 'tpope/vim-rails'
+call dein#add('tpope/vim-rails')
 " bundler integration (e.g. :Bopen)
-NeoBundle 'tpope/vim-bundler'
+call dein#add('tpope/vim-bundler')
 
 "LATER
 " " rake integration
@@ -147,16 +145,16 @@ NeoBundle 'tpope/vim-bundler'
 
 
 " syntax support
-NeoBundle 'vim-ruby/vim-ruby'
-NeoBundle 'tsaleh/vim-tmux'
-NeoBundle 'Puppet-Syntax-Highlighting'
-NeoBundle 'JSON.vim'
+call dein#add('vim-ruby/vim-ruby')
+call dein#add('tsaleh/vim-tmux')
+call dein#add('Puppet-Syntax-Highlighting')
+call dein#add('JSON.vim')
 "NeoBundle 'tpope/vim-cucumber'
-NeoBundle 'tpope/vim-haml'
+call dein#add('tpope/vim-haml')
 "NeoBundle 'haml'
 "NeoBundle 'tpope/vim-markdown'
-NeoBundle 'kchmck/vim-coffee-script'
-NeoBundle 'vitaly/vim-syntastic-coffee'
+call dein#add('kchmck/vim-coffee-script')
+call dein#add('vitaly/vim-syntastic-coffee')
 "NeoBundle 'vim-scripts/jade.vim'
 "NeoBundle 'wavded/vim-stylus'
 "NeoBundle 'VimClojure'
@@ -193,13 +191,8 @@ NeoBundle 'vitaly/vim-syntastic-coffee'
 "  NeoBundle 'Shougo/unite-outline'
 "  "NeoBundle 'ujihisa/unite-colorscheme'
 
-NeoBundle 'bruno-/vim-ruby-fold'
-
-call neobundle#end()
-
-" Required:
-filetype plugin indent on
-
-" If there are uninstalled bundles found on startup,
-" this will conveniently prompt you to install them.
-NeoBundleCheck
+call dein#add('bruno-/vim-ruby-fold')
+if dein#check_install()
+  call dein#install()
+endif
+call dein#end()
