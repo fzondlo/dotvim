@@ -18,10 +18,10 @@ map <C-w>= <C-w>+
 nnoremap <C-w>\ <C-w>=  
 
 " simplify resizing splits
-execute "set <M-j>=\ej"
-execute "set <M-k>=\ek"
-execute "set <M-h>=\eh"
-execute "set <M-l>=\el"
+"execute "set <M-j>=\ej"
+"execute "set <M-k>=\ek"
+"execute "set <M-h>=\eh"
+"execute "set <M-l>=\el"
 nnoremap <M-j> 2<C-w>-
 nnoremap <M-k> 2<C-w>+
 nnoremap <M-h> 5<C-w><
@@ -251,3 +251,5 @@ function! Wipeout()
   endtry
   echo "Wiped all unused buffers"
 endfunction
+
+nnoremap <F10> :so $MYVIMRC<CR>
