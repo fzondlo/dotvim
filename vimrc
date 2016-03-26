@@ -1,3 +1,5 @@
+let g:python_host_prog = '/usr/bin/python'
+
 " content of this file is loaded BEFORE all the plugins
 source ~/.vim/bundles.vim  " vundle plugins list
 source ~/.vim/global.vim   " general global configuration

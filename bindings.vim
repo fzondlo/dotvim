@@ -251,5 +251,3 @@ function! Wipeout()
   endtry
   echo "Wiped all unused buffers"
 endfunction
-
-nnoremap <F10> :so $MYVIMRC<CR>
