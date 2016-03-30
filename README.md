@@ -17,6 +17,7 @@ Get neovim to recognize the config
 * `<spacebar>` - leader
 * `<leader>v` - previous buffer
 * `<leader>b` - next buffer
+* `<leader>a` - ack search
 * `<ctrl-t>` - folds functions
 * `gd` - enhanced go to function under cursor
 * `<option-s>` - Save a file (`<ctrl-Y>`)

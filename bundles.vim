@@ -12,6 +12,9 @@ call dein#begin(expand('/Users/fzondlo/.vim/dein'))
 " Required:
 call dein#add('Shougo/dein.vim')
 
+" Ack
+call dein#add('mileszs/ack.vim')
+
 " Add or remove your plugins here:
 call dein#add('Shougo/neosnippet.vim')
 call dein#add('Shougo/neosnippet-snippets')
