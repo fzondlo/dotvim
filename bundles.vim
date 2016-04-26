@@ -65,7 +65,12 @@ call dein#add('tpope/vim-fugitive')
 " TextMate-style snippets
 "NeoBundle 'msanders/snipmate.vim'
 
+" Allows you to use <Tab> for all your insert completion needs (:help ins-completion).
 call dein#add('ervandew/supertab')
+
+" manipulate multiple rows of data at once and make hashes line up
+call dein#add('junegunn/vim-easy-align')
+"
 " Track the engine.
 call dein#add('SirVer/ultisnips')
 
@@ -133,8 +138,6 @@ call dein#add('tpope/vim-bundler')
 "LATER
 " " rake integration
 " NeoBundle 'tpope/vim-rake'
-" " A custom text object for selecting ruby blocks (ar/ir)
-" NeoBundle 'nelstrom/vim-textobj-rubyblock'
 " " ruby refactoring
 " NeoBundle 'ecomba/vim-ruby-refactoring'
 " " apidock.com docs integration
@@ -158,6 +161,13 @@ call dein#add('tpope/vim-haml')
 "NeoBundle 'tpope/vim-markdown'
 call dein#add('kchmck/vim-coffee-script')
 call dein#add('vitaly/vim-syntastic-coffee')
+" A custom text object for selecting ruby blocks (ar/ir)
+call dein#add('kana/vim-textobj-user')
+call dein#add('nelstrom/vim-textobj-rubyblock')
+
+" replacement for the repeat mapping (.) to support plugins
+call dein#add('tpope/vim-repeat')
+
 "NeoBundle 'vim-scripts/jade.vim'
 "NeoBundle 'wavded/vim-stylus'
 "NeoBundle 'VimClojure'
@@ -172,10 +182,6 @@ call dein#add('vitaly/vim-syntastic-coffee')
 "Possibly Interesting Stuff Here
 "  " Support and minor
 "  
-"  " Support for user-defined text objects
-"  NeoBundle 'kana/vim-textobj-user'
-"  " replacement for the repeat mapping (.) to support plugins
-"  NeoBundle 'tpope/vim-repeat'
 "  " hide .gitignore-d files from vim
 "  "NeoBundle 'vitaly/vim-gitignore'
 "  " repeat motion with <Space>

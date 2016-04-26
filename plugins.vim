@@ -41,6 +41,7 @@ let g:ctrlp_user_command = 'ag %s -i --nocolor --nogroup --hidden
       \ -g ""'
 " this makes ctrlp searching a lot faster
 let g:ctrlp_match_func = { 'match': 'pymatcher#PyMatch'  }
+let g:ctrlp_use_caching = 0
 
 " nerdtree
 " Ctrl-P to Display the file browser tree
