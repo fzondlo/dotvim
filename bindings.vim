@@ -5,7 +5,8 @@ inoremap <S-Tab> <C-d>
 nnoremap U <C-r>
 
 " Ctrl+s saves file - mapped to Ctrl-D and converted via Iterm
-map <C-Y> :w<cr>
+map <silent> <C-Y> :call <SID>StripTrailingWhitespaces()<CR>:w<cr>
+
 "ctrl+s in insert mode exits insert mode and saves
 imap <C-Y> <Esc>:w<cr>
 
@@ -200,7 +201,6 @@ function! Resize(dir)
   endif
 endfunction
 
-nnoremap <F8> :call <SID>StripTrailingWhitespaces()<CR>
 function! <SID>StripTrailingWhitespaces()
   retab
   " Preparation: save last search, and cursor position.
@@ -214,7 +214,6 @@ function! <SID>StripTrailingWhitespaces()
   " Clean up: restore previous search history, and cursor position
   let @/=_s
   call cursor(l, c)
-  echo "Stripped whitespace"
 endfunction
 
 nnoremap <F9> :silent! call Wipeout()<CR>
