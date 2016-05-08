@@ -90,44 +90,6 @@ call dein#add('wakatime/vim-wakatime')
 call dein#add('Valloric/YouCompleteMe')
 
 
-" Shows buffers at bottom
-" ---------------
-" Problem with this library is that if you have more than 4 buffers it becomes
-" pretty much useless
-"NeoBundle 'vim-scripts/buftabs'
-
-"TO EXPLORE LATER
-"  " tags list navigation
-"  NeoBundle 'taglist.vim'
-"  " yank history
-"  NeoBundle 'YankRing.vim'
-"  " vertical alignment tool
-"  NeoBundle 'tsaleh/vim-align'
-"  " 'ag' searching integration
-"  NeoBundle 'rking/ag.vim'
-"  " text object based on indent level (ai, ii)
-"  NeoBundle 'austintaylor/vim-indentobject'
-"  " global search & replace
-"  NeoBundle 'greplace.vim'
-"  " plugin for resolving three-way merge conflicts
-"  NeoBundle 'sjl/splice.vim'
-"  " calendar, duh!
-"  NeoBundle 'calendar.vim--Matsumoto'
-"  " A Narrow Region Plugin (similar to Emacs)
-"  NeoBundle 'chrisbra/NrrwRgn'
-"  " url based hyperlinks for text files
-"  NeoBundle 'utl.vim'
-"  " A clone of Emacs' Org-mode for Vim
-"  NeoBundle 'hsitz/VimOrganizer'
-"  " visual undo tree
-"  NeoBundle 'sjl/gundo.vim'
-"  " switch segments of text with predefined replacements. e.g. '' -> ""
-"  NeoBundle 'AndrewRadev/switch.vim'
-"  " async external commands with output in vim
-"  NeoBundle 'tpope/vim-dispatch'
-
-
-
 " Ruby/Rails
 
 " rails support
@@ -135,70 +97,31 @@ call dein#add('tpope/vim-rails')
 " bundler integration (e.g. :Bopen)
 call dein#add('tpope/vim-bundler')
 
-"LATER
-" " rake integration
-" NeoBundle 'tpope/vim-rake'
-" " ruby refactoring
-" NeoBundle 'ecomba/vim-ruby-refactoring'
-" " apidock.com docs integration
-" NeoBundle 'apidock.vim'
-" " toggle ruby blocks style
-" NeoBundle 'vim-scripts/blockle.vim'
-" " lightweight Rspec runner for Vim
-" NeoBundle 'josemarluedke/vim-rspec'
-
-
-
-
 " syntax support
 call dein#add('vim-ruby/vim-ruby')
 call dein#add('tsaleh/vim-tmux')
 call dein#add('Puppet-Syntax-Highlighting')
 call dein#add('JSON.vim')
-"NeoBundle 'tpope/vim-cucumber'
+
+" Elixir {{{
+call dein#add('elixir-lang/vim-elixir', {'autoload':{'filetypes':['elixir']}})
+" }}}
+
+" Erlang {{{
+call dein#add('jimenezrick/vimerl',      {'autoload':{'filetypes':['erlang']}})
+call dein#add('vim-erlang/vim-dialyzer', {'autoload':{'filetypes':['erlang']}})
+" }}}
+
+call dein#add('Shougo/neocomplete.vim')
+
 call dein#add('tpope/vim-haml')
-"NeoBundle 'haml'
-"NeoBundle 'tpope/vim-markdown'
 call dein#add('kchmck/vim-coffee-script')
 call dein#add('vitaly/vim-syntastic-coffee')
-" A custom text object for selecting ruby blocks (ar/ir)
 call dein#add('kana/vim-textobj-user')
 call dein#add('nelstrom/vim-textobj-rubyblock')
 
 " replacement for the repeat mapping (.) to support plugins
 call dein#add('tpope/vim-repeat')
-
-"NeoBundle 'vim-scripts/jade.vim'
-"NeoBundle 'wavded/vim-stylus'
-"NeoBundle 'VimClojure'
-"NeoBundle 'slim-template/vim-slim'
-"NeoBundle 'elixir-lang/vim-elixir'
-"NeoBundle 'Blackrush/vim-gocode'
-"NeoBundle 'ekalinin/Dockerfile.vim'
-"NeoBundle 'groenewege/vim-less'
-
-
-
-"Possibly Interesting Stuff Here
-"  " Support and minor
-"  
-"  " hide .gitignore-d files from vim
-"  "NeoBundle 'vitaly/vim-gitignore'
-"  " repeat motion with <Space>
-"  "NeoBundle 'scrooloose/vim-space'
-"  " Github's gist support
-"  NeoBundle 'mattn/gist-vim'
-"  " web APIs support
-"  NeoBundle 'mattn/webapi-vim'
-"  
-"  "NeoBundle 'ShowMarks'
-"  "NeoBundle 'tpope/vim-unimpaired'
-"  "NeoBundle 'reinh/vim-makegreen'
-"  
-"  NeoBundle 'Shougo/vimproc'
-"  NeoBundle 'Shougo/unite.vim'
-"  NeoBundle 'Shougo/unite-outline'
-"  "NeoBundle 'ujihisa/unite-colorscheme'
 
 call dein#add('bruno-/vim-ruby-fold')
 if dein#check_install()
