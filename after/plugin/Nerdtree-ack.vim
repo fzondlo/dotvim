@@ -19,15 +19,15 @@ endif
 let g:loaded_nerdtree_ack = 1
 
 " add the new menu item via NERD_Tree's API
-call NERDTreeAddMenuItem({
-    \ 'text': 'search files, case s(e)nsitive',
-    \ 'shortcut': 'e',
-    \ 'callback': 'NERDTreeAckSensitive' })
-
-call NERDTreeAddMenuItem({
-    \ 'text': '(s)earch files, case insensitive',
-    \ 'shortcut': 's',
-    \ 'callback': 'NERDTreeAck' })
+"call NERDTreeAddMenuItem({
+"    \ 'text': 'search files, case s(e)nsitive',
+"    \ 'shortcut': 'e',
+"    \ 'callback': 'NERDTreeAckSensitive' })
+"
+"call NERDTreeAddMenuItem({
+"    \ 'text': '(s)earch files, case insensitive',
+"    \ 'shortcut': 's',
+"    \ 'callback': 'NERDTreeAck' })
 
 function! NERDTreeAck()
     " get the current dir from NERDTree
